@@ -7,15 +7,6 @@
     "scripts": ["comfy.min.js", "background.js"],
     "persistent": true
   },
-  "browser_action": {
-    "default_popup": "popup.html",
-    "default_icon": {
-      "16": "images/opti_16.png",
-      "32": "images/opti_32.png",
-      "48": "images/opti_48.png",
-      "128": "images/opti_128.png"
-    }
-  },
   "icons": {
     "16": "images/opti_16.png",
     "32": "images/opti_32.png",
