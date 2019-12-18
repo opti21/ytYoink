@@ -2,7 +2,7 @@ user = "TWITCH_USER";
 pass = "TWITCH_OAUTH";
 
 ComfyJS.onCommand = (user, command, message, flags, extra) => {
-  if (flags.broadcaster && command == "song") {
+  if (command == "song") {
     let query = {
       audible: true,
       url: "https://*.youtube.com/*"
