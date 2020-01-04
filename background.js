@@ -1,13 +1,17 @@
 user = "TWITCH_USER";
 pass = "TWITCH_OAUTH";
 
+let url = chrome.identity.getRedirectURL();
+console.log(url);
+// https://nllamcfjamelanpfdedkabdabjhhaaon.chromiumapp.org/
+
 ComfyJS.onCommand = (user, command, message, flags, extra) => {
   if (command == "song") {
     let query = {
       audible: true,
       url: "https://*.youtube.com/*"
     };
-    chrome.tabs.query(query, function(result) {
+    chrome.tabs.query(query, function (result) {
       console.log(result);
       if (result.length === 0) {
         ComfyJS.Say("There is curently no song playing");

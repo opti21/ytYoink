@@ -2,7 +2,7 @@
   "name": "Youtube Title Yoinker",
   "version": "1.0",
   "description": "Send the title of currently playing youtube video to Twitch chat",
-  "permissions": ["tabs", "declarativeContent"],
+  "permissions": ["tabs", "declarativeContent", "identity"],
   "background": {
     "scripts": ["comfy.min.js", "background.js"],
     "persistent": true
